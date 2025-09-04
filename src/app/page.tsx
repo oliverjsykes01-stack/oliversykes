@@ -34,6 +34,12 @@ export default function Home() {
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6">
+              <Link href="/design-concepts">
+                <Palette className="mr-2 h-5 w-5" />
+                View Design Concepts
+              </Link>
+            </Button>
+            <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6">
               <Link href="/dashboard">
                 <Layout className="mr-2 h-5 w-5" />
                 View Component Showcase
