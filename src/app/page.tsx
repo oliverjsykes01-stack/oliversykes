@@ -13,7 +13,8 @@ import {
   Download,
   MapPin,
   Calendar,
-  Briefcase
+  Briefcase,
+  Star
 } from "lucide-react";
 
 export default function Home() {
@@ -39,6 +40,12 @@ export default function Home() {
               <Link href="#contact" className="text-sm font-medium hover:text-blue-600 transition-colors">
                 Contact
               </Link>
+              <Button asChild variant="outline" size="sm">
+                <Link href="/signup">
+                  <Star className="mr-2 h-4 w-4" />
+                  Try Teenietales
+                </Link>
+              </Button>
               <Button asChild size="sm">
                 <Link href="/design-concepts">
                   <Palette className="mr-2 h-4 w-4" />
@@ -123,16 +130,23 @@ export default function Home() {
               </p>
             </div>
 
-            {/* CTA Button */}
-            <div className="text-center mb-16">
+            {/* CTA Buttons */}
+            <div className="text-center mb-16 space-y-4">
               <Button asChild size="lg" className="text-lg px-8 py-4 h-auto bg-black hover:bg-gray-800 text-white border border-white/20">
-                <Link href="#work">
-                  Choose your plan
+                <Link href="/signup">
+                  Try Teenietales App
                   <svg className="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </Link>
               </Button>
+              <div>
+                <Button asChild variant="outline" size="lg" className="text-lg px-8 py-4 h-auto border-2 border-gray-300 text-gray-700 hover:bg-gray-50">
+                  <Link href="#work">
+                    View Portfolio
+                  </Link>
+                </Button>
+              </div>
             </div>
 
             {/* Trusted by Leaders Section */}
