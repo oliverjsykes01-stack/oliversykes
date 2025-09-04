@@ -68,16 +68,16 @@ export default function Home() {
 
             {/* Main Headline Section - Exact Hanzo Layout */}
             <div className="relative mb-16">
-              {/* Main Headline - Exact Hanzo Typography */}
+              {/* Main Headline - Söhne Breit Typography */}
               <div className="text-center mb-8">
-                <h1 className="text-[8rem] md:text-[10rem] lg:text-[12rem] font-bold tracking-[-0.02em] leading-[0.75] text-black dark:text-white" style={{fontFamily: 'Inter, system-ui, sans-serif', fontWeight: '700'}}>
+                <h1 className="text-[8rem] md:text-[10rem] lg:text-[12rem] tracking-[-0.02em] leading-[0.75] text-black dark:text-white" style={{fontFamily: 'Söhne, Inter, system-ui, sans-serif'}}>
                   <div className="flex items-baseline justify-center gap-6">
-                    <span className="block">Unlimited</span>
-                    <span className="block text-gray-500 text-[5rem] md:text-[6rem] lg:text-[7rem]">Design</span>
+                    <span className="block" style={{fontWeight: '800'}}>Unlimited</span>
+                    <span className="block text-gray-500 text-[5rem] md:text-[6rem] lg:text-[7rem]" style={{fontWeight: '300'}}>Design</span>
                   </div>
                   <div className="flex items-baseline justify-center gap-6">
-                    <span className="block text-gray-500 text-[5rem] md:text-[6rem] lg:text-[7rem]">for</span>
-                    <span className="block">Solid Startups</span>
+                    <span className="block text-gray-500 text-[5rem] md:text-[6rem] lg:text-[7rem]" style={{fontWeight: '300'}}>for</span>
+                    <span className="block" style={{fontWeight: '800'}}>Solid Startups</span>
                   </div>
                 </h1>
               </div>
@@ -118,7 +118,7 @@ export default function Home() {
 
             {/* Descriptive Text */}
             <div className="text-center mb-12">
-              <p className="text-xl md:text-2xl text-gray-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed font-light" style={{fontFamily: 'Inter, system-ui, sans-serif', fontWeight: '300'}}>
+              <p className="text-xl md:text-2xl text-gray-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed" style={{fontFamily: 'Söhne, Inter, system-ui, sans-serif', fontWeight: '300'}}>
                 We help startups and brands create beautiful, functional products — fast and hassle-free.
               </p>
             </div>
