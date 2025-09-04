@@ -58,19 +58,19 @@ export default function Home() {
         {/* Main Content */}
         <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-7xl mx-auto">
-            {/* Top Section with Text and Images */}
-            <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
-              {/* Left Side - Text Content */}
-              <div className="space-y-8">
+            {/* Top Section with Text and Images - Hanzo Layout */}
+            <div className="grid lg:grid-cols-12 gap-8 items-start mb-20">
+              {/* Left Side - Text Content (8 columns) */}
+              <div className="lg:col-span-8 space-y-8">
                 {/* Location Badge */}
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#5e5766]/20 bg-white/80 backdrop-blur-sm">
                   <MapPin className="h-4 w-4 text-[#5e5766]" />
                   <span className="text-sm font-medium text-[#4e4842]">London, UK</span>
                 </div>
 
-                {/* Main Headline - Hanzo Style */}
+                {/* Main Headline - Hanzo Exact Style */}
                 <div className="space-y-6">
-                  <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[0.9] text-[#4e4842] dark:text-white" style={{fontFamily: 'Inter, system-ui, sans-serif'}}>
+                  <h1 className="text-7xl md:text-8xl lg:text-9xl font-bold tracking-tight leading-[0.85] text-[#4e4842] dark:text-white" style={{fontFamily: 'Inter, system-ui, sans-serif', fontWeight: '700'}}>
                     <span className="block">Creative</span>
                     <span className="block bg-gradient-to-r from-[#345284] to-[#5e5766] bg-clip-text text-transparent">
                       Developer
@@ -81,7 +81,7 @@ export default function Home() {
                     </span>
                   </h1>
                   
-                  <p className="text-xl md:text-2xl text-[#5e5766] dark:text-slate-400 max-w-2xl leading-relaxed font-light" style={{fontFamily: 'Inter, system-ui, sans-serif'}}>
+                  <p className="text-xl md:text-2xl text-[#5e5766] dark:text-slate-400 max-w-2xl leading-relaxed font-light" style={{fontFamily: 'Inter, system-ui, sans-serif', fontWeight: '300'}}>
                     I help startups and brands create beautiful, functional products — fast and hassle-free.
                   </p>
                 </div>
@@ -116,18 +116,18 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Right Side - Image Boxes */}
-              <div className="space-y-8">
-                {/* First Image Box */}
+              {/* Right Side - Image Boxes (4 columns) - Hanzo Position */}
+              <div className="lg:col-span-4 space-y-6">
+                {/* First Image Box - Positioned like Hanzo */}
                 <div className="relative group cursor-pointer">
-                  <div className="aspect-[4/3] bg-gradient-to-br from-[#345284] to-[#5e5766] rounded-3xl overflow-hidden shadow-2xl transition-all duration-300 group-hover:scale-105 group-hover:shadow-3xl">
+                  <div className="aspect-[3/4] bg-gradient-to-br from-[#345284] to-[#5e5766] rounded-2xl overflow-hidden shadow-2xl transition-all duration-300 group-hover:scale-105 group-hover:shadow-3xl">
                     <div className="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-all duration-300"></div>
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div className="text-center text-white">
-                        <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-white/30 transition-all duration-300">
-                          <Code className="h-10 w-10" />
+                        <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-white/30 transition-all duration-300">
+                          <Code className="h-8 w-8" />
                         </div>
-                        <p className="text-xl font-semibold mb-2" style={{fontFamily: 'Inter, system-ui, sans-serif'}}>Project Showcase</p>
+                        <p className="text-lg font-semibold mb-2" style={{fontFamily: 'Inter, system-ui, sans-serif'}}>Project Showcase</p>
                         <p className="text-sm opacity-80">Add your image here</p>
                       </div>
                     </div>
@@ -136,16 +136,16 @@ export default function Home() {
                   </div>
                 </div>
 
-                {/* Second Image Box */}
+                {/* Second Image Box - Positioned like Hanzo */}
                 <div className="relative group cursor-pointer">
-                  <div className="aspect-[4/3] bg-gradient-to-br from-[#5e5766] to-[#345284] rounded-3xl overflow-hidden shadow-2xl transition-all duration-300 group-hover:scale-105 group-hover:shadow-3xl">
+                  <div className="aspect-[3/4] bg-gradient-to-br from-[#5e5766] to-[#345284] rounded-2xl overflow-hidden shadow-2xl transition-all duration-300 group-hover:scale-105 group-hover:shadow-3xl">
                     <div className="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-all duration-300"></div>
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div className="text-center text-white">
-                        <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-white/30 transition-all duration-300">
-                          <Palette className="h-10 w-10" />
+                        <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-white/30 transition-all duration-300">
+                          <Palette className="h-8 w-8" />
                         </div>
-                        <p className="text-xl font-semibold mb-2" style={{fontFamily: 'Inter, system-ui, sans-serif'}}>Design Process</p>
+                        <p className="text-lg font-semibold mb-2" style={{fontFamily: 'Inter, system-ui, sans-serif'}}>Design Process</p>
                         <p className="text-sm opacity-80">Add your image here</p>
                       </div>
                     </div>
