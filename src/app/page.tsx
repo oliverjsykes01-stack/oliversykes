@@ -50,7 +50,7 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Hero Section - Hanzo Exact Match */}
+      {/* Hero Section - Exact Hanzo Match */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white dark:bg-slate-900">
         {/* Background Elements */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#f7deaf] via-white to-[#f9e8b5] dark:from-slate-900 dark:via-slate-800 dark:to-slate-900"></div>
@@ -58,121 +58,89 @@ export default function Home() {
         {/* Main Content */}
         <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-7xl mx-auto">
-            {/* Top Section with Text and Images - Hanzo Layout */}
-            <div className="grid lg:grid-cols-12 gap-8 items-start mb-20">
-              {/* Left Side - Text Content (8 columns) */}
-              <div className="lg:col-span-8 space-y-8">
-                {/* Location Badge */}
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#5e5766]/20 bg-white/80 backdrop-blur-sm">
-                  <MapPin className="h-4 w-4 text-[#5e5766]" />
-                  <span className="text-sm font-medium text-[#4e4842]">London, UK</span>
-                </div>
+            {/* Top Banner - Booking Open */}
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-black/20 bg-white/80 backdrop-blur-sm">
+                <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                <span className="text-sm font-medium text-black">Booking Open — 2 Spots Left</span>
+              </div>
+            </div>
 
-                {/* Main Headline - Hanzo Exact Style */}
-                <div className="space-y-6">
-                  <h1 className="text-7xl md:text-8xl lg:text-9xl font-bold tracking-tight leading-[0.85] text-[#4e4842] dark:text-white" style={{fontFamily: 'Inter, system-ui, sans-serif', fontWeight: '700'}}>
-                    <span className="block">Creative</span>
-                    <span className="block bg-gradient-to-r from-[#345284] to-[#5e5766] bg-clip-text text-transparent">
-                      Developer
-                    </span>
-                    <span className="block">for</span>
-                    <span className="block bg-gradient-to-r from-[#5e5766] to-[#345284] bg-clip-text text-transparent">
-                      Solid Startups
-                    </span>
-                  </h1>
-                  
-                  <p className="text-xl md:text-2xl text-[#5e5766] dark:text-slate-400 max-w-2xl leading-relaxed font-light" style={{fontFamily: 'Inter, system-ui, sans-serif', fontWeight: '300'}}>
-                    I help startups and brands create beautiful, functional products — fast and hassle-free.
-                  </p>
-                </div>
+            {/* Main Headline Section - Exact Hanzo Layout */}
+            <div className="relative mb-16">
+              {/* Main Headline */}
+              <div className="text-center mb-8">
+                <h1 className="text-8xl md:text-9xl lg:text-[12rem] font-bold tracking-tight leading-[0.8] text-black dark:text-white" style={{fontFamily: 'Inter, system-ui, sans-serif', fontWeight: '700'}}>
+                  <div className="flex items-baseline justify-center gap-4">
+                    <span className="block">Unlimited</span>
+                    <span className="block text-gray-500 text-6xl md:text-7xl lg:text-8xl">Design</span>
+                  </div>
+                  <div className="flex items-baseline justify-center gap-4">
+                    <span className="block text-gray-500 text-6xl md:text-7xl lg:text-8xl">for</span>
+                    <span className="block">Solid Startups</span>
+                  </div>
+                </h1>
+              </div>
 
-                {/* CTA Buttons - Hanzo Style */}
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button asChild size="lg" className="text-lg px-8 py-4 h-auto bg-[#345284] hover:bg-[#2a4268] text-white border-0">
-                    <Link href="#work">
-                      <Briefcase className="mr-3 h-5 w-5" />
-                      View My Work
-                    </Link>
-                  </Button>
-                  <Button asChild variant="outline" size="lg" className="text-lg px-8 py-4 h-auto border-2 border-[#5e5766] text-[#4e4842] hover:bg-[#f7deaf] dark:border-slate-600 dark:text-slate-300 dark:hover:bg-slate-800">
-                    <Link href="#contact">
-                      <Mail className="mr-3 h-5 w-5" />
-                      Get In Touch
-                    </Link>
-                  </Button>
-                </div>
-
-                {/* Social Links */}
-                <div className="flex items-center space-x-6 pt-4">
-                  <Link href="https://github.com" className="text-[#5e5766] hover:text-[#345284] dark:text-slate-400 dark:hover:text-slate-300 transition-colors">
-                    <Github className="h-6 w-6" />
-                  </Link>
-                  <Link href="https://linkedin.com" className="text-[#5e5766] hover:text-[#345284] dark:text-slate-400 dark:hover:text-slate-300 transition-colors">
-                    <Linkedin className="h-6 w-6" />
-                  </Link>
-                  <Link href="mailto:oliver@example.com" className="text-[#5e5766] hover:text-[#345284] dark:text-slate-400 dark:hover:text-slate-300 transition-colors">
-                    <Mail className="h-6 w-6" />
-                  </Link>
+              {/* Image Boxes - Positioned Exactly Like Hanzo */}
+              <div className="absolute top-0 right-0 w-64 h-80">
+                {/* First Image Box - App Mockup */}
+                <div className="relative w-full h-full bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-200">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 p-4">
+                    <div className="bg-white rounded-lg h-full p-4">
+                      <div className="text-center">
+                        <div className="w-8 h-8 bg-red-500 rounded-full mx-auto mb-2"></div>
+                        <p className="text-xs font-semibold text-gray-800">Hobby Point.</p>
+                        <div className="mt-4 bg-red-500 text-white text-xs px-3 py-1 rounded">CALL ME</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              {/* Right Side - Image Boxes (4 columns) - Hanzo Position */}
-              <div className="lg:col-span-4 space-y-6">
-                {/* First Image Box - Positioned like Hanzo */}
-                <div className="relative group cursor-pointer">
-                  <div className="aspect-[3/4] bg-gradient-to-br from-[#345284] to-[#5e5766] rounded-2xl overflow-hidden shadow-2xl transition-all duration-300 group-hover:scale-105 group-hover:shadow-3xl">
-                    <div className="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-all duration-300"></div>
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-center text-white">
-                        <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-white/30 transition-all duration-300">
-                          <Code className="h-8 w-8" />
-                        </div>
-                        <p className="text-lg font-semibold mb-2" style={{fontFamily: 'Inter, system-ui, sans-serif'}}>Project Showcase</p>
-                        <p className="text-sm opacity-80">Add your image here</p>
-                      </div>
+              <div className="absolute bottom-0 left-0 w-48 h-60">
+                {/* Second Image Box - Abstract Logo */}
+                <div className="relative w-full h-full bg-gray-800 rounded-2xl shadow-2xl overflow-hidden border border-gray-700">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center">
+                      <div className="w-8 h-8 bg-gray-400 rounded"></div>
                     </div>
-                    {/* Hover overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  </div>
-                </div>
-
-                {/* Second Image Box - Positioned like Hanzo */}
-                <div className="relative group cursor-pointer">
-                  <div className="aspect-[3/4] bg-gradient-to-br from-[#5e5766] to-[#345284] rounded-2xl overflow-hidden shadow-2xl transition-all duration-300 group-hover:scale-105 group-hover:shadow-3xl">
-                    <div className="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-all duration-300"></div>
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-center text-white">
-                        <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-white/30 transition-all duration-300">
-                          <Palette className="h-8 w-8" />
-                        </div>
-                        <p className="text-lg font-semibold mb-2" style={{fontFamily: 'Inter, system-ui, sans-serif'}}>Design Process</p>
-                        <p className="text-sm opacity-80">Add your image here</p>
-                      </div>
-                    </div>
-                    {/* Hover overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Trusted By Section */}
-            <div className="text-center border-t border-[#5e5766]/20 pt-16">
-              <p className="text-sm text-[#5e5766] dark:text-slate-400 mb-8 font-medium">Trusted by Leaders</p>
-              <div className="flex items-center justify-center space-x-12 opacity-60">
-                <div className="text-2xl font-bold text-[#5e5766]/60 dark:text-slate-600">Google</div>
-                <div className="text-2xl font-bold text-[#5e5766]/60 dark:text-slate-600">Meta</div>
-                <div className="text-2xl font-bold text-[#5e5766]/60 dark:text-slate-600">PayPal</div>
-                <div className="text-2xl font-bold text-[#5e5766]/60 dark:text-slate-600">Stripe</div>
-              </div>
+            {/* Descriptive Text */}
+            <div className="text-center mb-12">
+              <p className="text-xl md:text-2xl text-gray-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed font-light" style={{fontFamily: 'Inter, system-ui, sans-serif', fontWeight: '300'}}>
+                We help startups and brands create beautiful, functional products — fast and hassle-free.
+              </p>
             </div>
-          </div>
-        </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-          <div className="w-6 h-10 border-2 border-[#5e5766]/40 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-[#5e5766]/60 rounded-full mt-2 animate-bounce"></div>
+            {/* CTA Button */}
+            <div className="text-center mb-16">
+              <Button asChild size="lg" className="text-lg px-8 py-4 h-auto bg-black hover:bg-gray-800 text-white border border-white/20">
+                <Link href="#work">
+                  Choose your plan
+                  <svg className="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </Button>
+            </div>
+
+            {/* Trusted by Leaders Section */}
+            <div className="text-center">
+              <div className="flex items-center justify-center space-x-4 mb-4">
+                {/* Avatar Circles */}
+                <div className="w-12 h-12 bg-gray-300 rounded-full"></div>
+                <div className="w-12 h-12 bg-gray-400 rounded-full"></div>
+                <div className="w-12 h-12 bg-gray-500 rounded-full"></div>
+                <div className="w-12 h-12 bg-gray-600 rounded-full"></div>
+                <div className="w-12 h-12 bg-gray-700 rounded-full"></div>
+              </div>
+              <p className="text-sm text-gray-500 dark:text-slate-400 font-medium">Trusted by Leaders</p>
+            </div>
           </div>
         </div>
       </section>
