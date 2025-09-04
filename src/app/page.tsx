@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Code, Palette, Layout, Sparkles } from "lucide-react";
 
@@ -137,7 +137,7 @@ export default function Home() {
         <div className="mt-20 text-center space-y-6">
           <h2 className="text-2xl font-bold">Ready to Build Your Portfolio?</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Explore the starter kit and component showcase, then let's discuss your specific portfolio vision.
+            Explore the starter kit and component showcase, then let&apos;s discuss your specific portfolio vision.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild variant="outline">
@@ -154,7 +154,7 @@ export default function Home() {
       <footer className="border-t bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto px-4 py-8">
           <div className="text-center text-sm text-muted-foreground">
-            <p>Built with 5 Day Sprint Framework by Omar Choudhry - Ready for Oliver's vision</p>
+            <p>Built with 5 Day Sprint Framework by Omar Choudhry - Ready for Oliver&apos;s vision</p>
           </div>
         </div>
       </footer>

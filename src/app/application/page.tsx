@@ -226,7 +226,7 @@ export default function ApplicationPage() {
                           Showcase your coding skills with interactive examples and live demos.
                         </p>
                         <div className="bg-slate-100 dark:bg-slate-800 p-2 rounded text-xs font-mono">
-                          const portfolio = "amazing";
+                          const portfolio = &quot;amazing&quot;;
                         </div>
                       </div>
                     </HoverCardContent>
@@ -297,7 +297,7 @@ export default function ApplicationPage() {
                   Ready to Customize?
                 </CardTitle>
                 <CardDescription>
-                  This is your starter kit - let's make it uniquely yours
+                  This is your starter kit - let&apos;s make it uniquely yours
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
