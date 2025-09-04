@@ -50,76 +50,120 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Hero Section - Hanzo Inspired */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Hero Section - Hanzo Exact Match */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white dark:bg-slate-900">
         {/* Background Elements */}
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-slate-100 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-500/10 via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#f7deaf] via-white to-[#f9e8b5] dark:from-slate-900 dark:via-slate-800 dark:to-slate-900"></div>
         
         {/* Main Content */}
-        <div className="relative container mx-auto px-4 py-20 text-center">
-          <div className="max-w-5xl mx-auto space-y-12">
-            {/* Location Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 dark:border-slate-700 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
-              <MapPin className="h-4 w-4 text-slate-600 dark:text-slate-400" />
-              <span className="text-sm font-medium text-slate-700 dark:text-slate-300">London, UK</span>
-            </div>
+        <div className="relative container mx-auto px-4 py-20">
+          <div className="max-w-7xl mx-auto">
+            {/* Top Section with Text and Images */}
+            <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
+              {/* Left Side - Text Content */}
+              <div className="space-y-8">
+                {/* Location Badge */}
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#5e5766]/20 bg-white/80 backdrop-blur-sm">
+                  <MapPin className="h-4 w-4 text-[#5e5766]" />
+                  <span className="text-sm font-medium text-[#4e4842]">London, UK</span>
+                </div>
 
-            {/* Main Headline */}
-            <div className="space-y-6">
-              <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tight leading-none">
-                <span className="block text-slate-900 dark:text-white">Creative</span>
-                <span className="block bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">
-                  Developer
-                </span>
-                <span className="block text-slate-900 dark:text-white">for</span>
-                <span className="block bg-gradient-to-r from-purple-600 via-blue-600 to-purple-800 bg-clip-text text-transparent">
-                  Solid Startups
-                </span>
-              </h1>
-              
-              <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed">
-                I help startups and brands create beautiful, functional products — fast and hassle-free.
-              </p>
-            </div>
+                {/* Main Headline - Hanzo Style */}
+                <div className="space-y-6">
+                  <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[0.9] text-[#4e4842] dark:text-white" style={{fontFamily: 'Inter, system-ui, sans-serif'}}>
+                    <span className="block">Creative</span>
+                    <span className="block bg-gradient-to-r from-[#345284] to-[#5e5766] bg-clip-text text-transparent">
+                      Developer
+                    </span>
+                    <span className="block">for</span>
+                    <span className="block bg-gradient-to-r from-[#5e5766] to-[#345284] bg-clip-text text-transparent">
+                      Solid Startups
+                    </span>
+                  </h1>
+                  
+                  <p className="text-xl md:text-2xl text-[#5e5766] dark:text-slate-400 max-w-2xl leading-relaxed font-light" style={{fontFamily: 'Inter, system-ui, sans-serif'}}>
+                    I help startups and brands create beautiful, functional products — fast and hassle-free.
+                  </p>
+                </div>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <Button asChild size="lg" className="text-lg px-12 py-6 h-auto bg-slate-900 hover:bg-slate-800 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100">
-                <Link href="#work">
-                  <Briefcase className="mr-3 h-5 w-5" />
-                  View My Work
-                </Link>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="text-lg px-12 py-6 h-auto border-2 border-slate-300 dark:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800">
-                <Link href="#contact">
-                  <Mail className="mr-3 h-5 w-5" />
-                  Get In Touch
-                </Link>
-              </Button>
-            </div>
+                {/* CTA Buttons - Hanzo Style */}
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Button asChild size="lg" className="text-lg px-8 py-4 h-auto bg-[#345284] hover:bg-[#2a4268] text-white border-0">
+                    <Link href="#work">
+                      <Briefcase className="mr-3 h-5 w-5" />
+                      View My Work
+                    </Link>
+                  </Button>
+                  <Button asChild variant="outline" size="lg" className="text-lg px-8 py-4 h-auto border-2 border-[#5e5766] text-[#4e4842] hover:bg-[#f7deaf] dark:border-slate-600 dark:text-slate-300 dark:hover:bg-slate-800">
+                    <Link href="#contact">
+                      <Mail className="mr-3 h-5 w-5" />
+                      Get In Touch
+                    </Link>
+                  </Button>
+                </div>
 
-            {/* Social Links */}
-            <div className="flex items-center justify-center space-x-8 pt-8">
-              <Link href="https://github.com" className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 transition-colors">
-                <Github className="h-6 w-6" />
-              </Link>
-              <Link href="https://linkedin.com" className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 transition-colors">
-                <Linkedin className="h-6 w-6" />
-              </Link>
-              <Link href="mailto:oliver@example.com" className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 transition-colors">
-                <Mail className="h-6 w-6" />
-              </Link>
+                {/* Social Links */}
+                <div className="flex items-center space-x-6 pt-4">
+                  <Link href="https://github.com" className="text-[#5e5766] hover:text-[#345284] dark:text-slate-400 dark:hover:text-slate-300 transition-colors">
+                    <Github className="h-6 w-6" />
+                  </Link>
+                  <Link href="https://linkedin.com" className="text-[#5e5766] hover:text-[#345284] dark:text-slate-400 dark:hover:text-slate-300 transition-colors">
+                    <Linkedin className="h-6 w-6" />
+                  </Link>
+                  <Link href="mailto:oliver@example.com" className="text-[#5e5766] hover:text-[#345284] dark:text-slate-400 dark:hover:text-slate-300 transition-colors">
+                    <Mail className="h-6 w-6" />
+                  </Link>
+                </div>
+              </div>
+
+              {/* Right Side - Image Boxes */}
+              <div className="space-y-8">
+                {/* First Image Box */}
+                <div className="relative group cursor-pointer">
+                  <div className="aspect-[4/3] bg-gradient-to-br from-[#345284] to-[#5e5766] rounded-3xl overflow-hidden shadow-2xl transition-all duration-300 group-hover:scale-105 group-hover:shadow-3xl">
+                    <div className="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-all duration-300"></div>
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="text-center text-white">
+                        <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-white/30 transition-all duration-300">
+                          <Code className="h-10 w-10" />
+                        </div>
+                        <p className="text-xl font-semibold mb-2" style={{fontFamily: 'Inter, system-ui, sans-serif'}}>Project Showcase</p>
+                        <p className="text-sm opacity-80">Add your image here</p>
+                      </div>
+                    </div>
+                    {/* Hover overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </div>
+                </div>
+
+                {/* Second Image Box */}
+                <div className="relative group cursor-pointer">
+                  <div className="aspect-[4/3] bg-gradient-to-br from-[#5e5766] to-[#345284] rounded-3xl overflow-hidden shadow-2xl transition-all duration-300 group-hover:scale-105 group-hover:shadow-3xl">
+                    <div className="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-all duration-300"></div>
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="text-center text-white">
+                        <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-white/30 transition-all duration-300">
+                          <Palette className="h-10 w-10" />
+                        </div>
+                        <p className="text-xl font-semibold mb-2" style={{fontFamily: 'Inter, system-ui, sans-serif'}}>Design Process</p>
+                        <p className="text-sm opacity-80">Add your image here</p>
+                      </div>
+                    </div>
+                    {/* Hover overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* Trusted By Section */}
-            <div className="pt-16 border-t border-slate-200 dark:border-slate-700">
-              <p className="text-sm text-slate-500 dark:text-slate-400 mb-8">Trusted by Leaders</p>
+            <div className="text-center border-t border-[#5e5766]/20 pt-16">
+              <p className="text-sm text-[#5e5766] dark:text-slate-400 mb-8 font-medium">Trusted by Leaders</p>
               <div className="flex items-center justify-center space-x-12 opacity-60">
-                <div className="text-2xl font-bold text-slate-300 dark:text-slate-600">Google</div>
-                <div className="text-2xl font-bold text-slate-300 dark:text-slate-600">Meta</div>
-                <div className="text-2xl font-bold text-slate-300 dark:text-slate-600">PayPal</div>
-                <div className="text-2xl font-bold text-slate-300 dark:text-slate-600">Stripe</div>
+                <div className="text-2xl font-bold text-[#5e5766]/60 dark:text-slate-600">Google</div>
+                <div className="text-2xl font-bold text-[#5e5766]/60 dark:text-slate-600">Meta</div>
+                <div className="text-2xl font-bold text-[#5e5766]/60 dark:text-slate-600">PayPal</div>
+                <div className="text-2xl font-bold text-[#5e5766]/60 dark:text-slate-600">Stripe</div>
               </div>
             </div>
           </div>
@@ -127,8 +171,8 @@ export default function Home() {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-          <div className="w-6 h-10 border-2 border-slate-300 dark:border-slate-600 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-slate-400 dark:bg-slate-500 rounded-full mt-2 animate-bounce"></div>
+          <div className="w-6 h-10 border-2 border-[#5e5766]/40 rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-[#5e5766]/60 rounded-full mt-2 animate-bounce"></div>
           </div>
         </div>
       </section>
