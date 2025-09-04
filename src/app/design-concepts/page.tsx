@@ -141,7 +141,7 @@ export default function DesignConceptsPage() {
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="text-muted-foreground">
-                I can see your design concepts and I'm ready to help implement them! 
+                I can see your design concepts and I&apos;m ready to help implement them! 
                 Each design shows a different section of your portfolio with specific layouts and styling.
               </p>
               <div className="grid md:grid-cols-2 gap-4">
