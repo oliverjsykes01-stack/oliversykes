@@ -68,42 +68,48 @@ export default function Home() {
 
             {/* Main Headline Section - Exact Hanzo Layout */}
             <div className="relative mb-16">
-              {/* Main Headline */}
+              {/* Main Headline - Exact Hanzo Typography */}
               <div className="text-center mb-8">
-                <h1 className="text-8xl md:text-9xl lg:text-[12rem] font-bold tracking-tight leading-[0.8] text-black dark:text-white" style={{fontFamily: 'Inter, system-ui, sans-serif', fontWeight: '700'}}>
-                  <div className="flex items-baseline justify-center gap-4">
+                <h1 className="text-[8rem] md:text-[10rem] lg:text-[12rem] font-bold tracking-[-0.02em] leading-[0.75] text-black dark:text-white" style={{fontFamily: 'Inter, system-ui, sans-serif', fontWeight: '700'}}>
+                  <div className="flex items-baseline justify-center gap-6">
                     <span className="block">Unlimited</span>
-                    <span className="block text-gray-500 text-6xl md:text-7xl lg:text-8xl">Design</span>
+                    <span className="block text-gray-500 text-[5rem] md:text-[6rem] lg:text-[7rem]">Design</span>
                   </div>
-                  <div className="flex items-baseline justify-center gap-4">
-                    <span className="block text-gray-500 text-6xl md:text-7xl lg:text-8xl">for</span>
+                  <div className="flex items-baseline justify-center gap-6">
+                    <span className="block text-gray-500 text-[5rem] md:text-[6rem] lg:text-[7rem]">for</span>
                     <span className="block">Solid Startups</span>
                   </div>
                 </h1>
               </div>
 
               {/* Image Boxes - Positioned Exactly Like Hanzo */}
-              <div className="absolute top-0 right-0 w-64 h-80">
-                {/* First Image Box - App Mockup */}
-                <div className="relative w-full h-full bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-200">
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 p-4">
-                    <div className="bg-white rounded-lg h-full p-4">
-                      <div className="text-center">
-                        <div className="w-8 h-8 bg-red-500 rounded-full mx-auto mb-2"></div>
-                        <p className="text-xs font-semibold text-gray-800">Hobby Point.</p>
-                        <div className="mt-4 bg-red-500 text-white text-xs px-3 py-1 rounded">CALL ME</div>
+              <div className="absolute top-0 right-0 w-72 h-96">
+                {/* First Image Box - Blank for your image */}
+                <div className="relative w-full h-full bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-200">
+                  <div className="absolute inset-0 flex items-center justify-center bg-gray-50">
+                    <div className="text-center text-gray-400">
+                      <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
                       </div>
+                      <p className="text-sm font-medium">Add your image here</p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div className="absolute bottom-0 left-0 w-48 h-60">
-                {/* Second Image Box - Abstract Logo */}
-                <div className="relative w-full h-full bg-gray-800 rounded-2xl shadow-2xl overflow-hidden border border-gray-700">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center">
-                      <div className="w-8 h-8 bg-gray-400 rounded"></div>
+              <div className="absolute bottom-0 left-0 w-56 h-72">
+                {/* Second Image Box - Blank for your image */}
+                <div className="relative w-full h-full bg-gray-800 rounded-3xl shadow-2xl overflow-hidden border border-gray-700">
+                  <div className="absolute inset-0 flex items-center justify-center bg-gray-900">
+                    <div className="text-center text-gray-400">
+                      <div className="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                      </div>
+                      <p className="text-sm font-medium">Add your image here</p>
                     </div>
                   </div>
                 </div>
