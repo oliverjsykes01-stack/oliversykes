@@ -2,7 +2,6 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { 
   Code, 
   Palette, 
@@ -51,71 +50,85 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section className="container mx-auto px-4 py-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
-            <div className="space-y-4">
-              <Badge variant="outline" className="text-sm w-fit">
-                <MapPin className="mr-2 h-3 w-3" />
-                London, UK
-              </Badge>
-              <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-                Hi, I&apos;m{" "}
-                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                  Oliver Sykes
+      {/* Hero Section - Hanzo Inspired */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-slate-100 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-500/10 via-transparent to-transparent"></div>
+        
+        {/* Main Content */}
+        <div className="relative container mx-auto px-4 py-20 text-center">
+          <div className="max-w-5xl mx-auto space-y-12">
+            {/* Location Badge */}
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 dark:border-slate-700 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
+              <MapPin className="h-4 w-4 text-slate-600 dark:text-slate-400" />
+              <span className="text-sm font-medium text-slate-700 dark:text-slate-300">London, UK</span>
+            </div>
+
+            {/* Main Headline */}
+            <div className="space-y-6">
+              <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tight leading-none">
+                <span className="block text-slate-900 dark:text-white">Creative</span>
+                <span className="block bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">
+                  Developer
+                </span>
+                <span className="block text-slate-900 dark:text-white">for</span>
+                <span className="block bg-gradient-to-r from-purple-600 via-blue-600 to-purple-800 bg-clip-text text-transparent">
+                  Solid Startups
                 </span>
               </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed">
-                Creative Developer & Designer crafting beautiful digital experiences with modern technologies and thoughtful design.
+              
+              <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed">
+                I help startups and brands create beautiful, functional products — fast and hassle-free.
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button asChild size="lg" className="text-lg px-8 py-6">
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+              <Button asChild size="lg" className="text-lg px-12 py-6 h-auto bg-slate-900 hover:bg-slate-800 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100">
                 <Link href="#work">
-                  <Briefcase className="mr-2 h-5 w-5" />
+                  <Briefcase className="mr-3 h-5 w-5" />
                   View My Work
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6">
+              <Button asChild variant="outline" size="lg" className="text-lg px-12 py-6 h-auto border-2 border-slate-300 dark:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800">
                 <Link href="#contact">
-                  <Mail className="mr-2 h-5 w-5" />
+                  <Mail className="mr-3 h-5 w-5" />
                   Get In Touch
                 </Link>
               </Button>
             </div>
 
-            <div className="flex items-center space-x-6">
-              <Link href="https://github.com" className="text-muted-foreground hover:text-foreground transition-colors">
+            {/* Social Links */}
+            <div className="flex items-center justify-center space-x-8 pt-8">
+              <Link href="https://github.com" className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 transition-colors">
                 <Github className="h-6 w-6" />
               </Link>
-              <Link href="https://linkedin.com" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link href="https://linkedin.com" className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 transition-colors">
                 <Linkedin className="h-6 w-6" />
               </Link>
-              <Link href="mailto:oliver@example.com" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link href="mailto:oliver@example.com" className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 transition-colors">
                 <Mail className="h-6 w-6" />
               </Link>
             </div>
-          </div>
 
-          <div className="relative">
-            <div className="relative w-full h-96 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl overflow-hidden">
-              <div className="absolute inset-0 bg-black/20"></div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <Avatar className="w-32 h-32 border-4 border-white/20">
-                  <AvatarImage src="/placeholder-avatar.jpg" alt="Oliver Sykes" />
-                  <AvatarFallback className="text-4xl bg-white/20 text-white">OS</AvatarFallback>
-                </Avatar>
-              </div>
-              <div className="absolute bottom-6 left-6 right-6">
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                  <p className="text-white text-sm">
-                    &quot;Passionate about creating digital experiences that matter&quot;
-                  </p>
-                </div>
+            {/* Trusted By Section */}
+            <div className="pt-16 border-t border-slate-200 dark:border-slate-700">
+              <p className="text-sm text-slate-500 dark:text-slate-400 mb-8">Trusted by Leaders</p>
+              <div className="flex items-center justify-center space-x-12 opacity-60">
+                <div className="text-2xl font-bold text-slate-300 dark:text-slate-600">Google</div>
+                <div className="text-2xl font-bold text-slate-300 dark:text-slate-600">Meta</div>
+                <div className="text-2xl font-bold text-slate-300 dark:text-slate-600">PayPal</div>
+                <div className="text-2xl font-bold text-slate-300 dark:text-slate-600">Stripe</div>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+          <div className="w-6 h-10 border-2 border-slate-300 dark:border-slate-600 rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-slate-400 dark:bg-slate-500 rounded-full mt-2 animate-bounce"></div>
           </div>
         </div>
       </section>
